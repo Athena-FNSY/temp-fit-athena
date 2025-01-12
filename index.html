@@ -1,17 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Fit Athena - Coming Soon</title>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+    <link
+      rel="stylesheet"
+      as="style"
+      onload="this.rel='stylesheet'"
+      href="https://fonts.googleapis.com/css2?display=swap&family=Lexend:wght@400;500;700;900&family=Noto+Sans:wght@400;500;700;900"
+    />
 
-  <!-- Load the font if hosting locally -->
-  <link rel="stylesheet" href="css/style.css" />
-</head>
-<body>
-  <div class="container">
-    <div class="logo-text">Fit Athena</div>
-    <div class="coming-soon">Coming Soon ...</div>
-  </div>
-</body>
+    <title>Fit Athena</title>
+    <link rel="icon" type="image/x-icon" href="data:image/x-icon;base64," />
+
+    <!-- Tailwind (with container queries, forms) -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+
+    <!-- Your external CSS file -->
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-white overflow-x-hidden">
+    <div class="flex flex-col min-h-screen">
+      <!-- Header -->
+      <header
+        class="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#f0f2f5] px-4 md:px-10 py-3"
+      >
+        <div class="flex items-center gap-4 text-[#111418]">
+          <h2 class="text-lg font-bold leading-tight tracking-[-0.015em]">
+            FitAthena
+          </h2>
+        </div>
+        <div class="flex flex-1 justify-end gap-8">
+          <!-- Add any top-right navigation or buttons here -->
+        </div>
+      </header>
+
+      <!-- Main Content -->
+      <main class="flex-1 flex justify-center py-5 px-4 md:px-10">
+        <div class="layout-content-container flex flex-col w-full max-w-[960px]">
+          <!-- Hero section -->
+          <div class="flex flex-col md:flex-row gap-6 py-10">
+            <!-- Feature image container -->
+            <div
+              class="w-full md:w-1/2 bg-center bg-no-repeat bg-cover aspect-video rounded-xl feature-bg-image"
+            ></div>
+
+            <!-- Description container -->
+            <div class="w-full md:w-1/2 flex flex-col gap-6 justify-center">
+              <div class="flex flex-col gap-2 text-left">
+                <h1 class="text-4xl font-black leading-tight tracking-[-0.033em]">
+                  Coming Soon ...
+                </h1>
+                <h2
+                  class="font-black leading-tight tracking-[-0.033em]"
+                >
+                  Empower your clients to reach their goals
+                </h2>
+                <h3 class="text-sm font-normal leading-normal">
+                  The all-in-one platform for fitness professionals, coaches, and
+                  nutritionists. Plan workouts, track nutrition, schedule sessions,
+                  and communicate with clients.
+                </h3>
+              </div>
+            </div>
+          </div>
+
+          <!-- Features Title -->
+          <h2
+            class="text-[#111418] text-[22px] font-bold leading-tight tracking-[-0.015em] pb-3"
+          >
+            Features
+          </h2>
+
+          <!-- Features Grid -->
+          <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 p-4">
+            <!-- Feature Card 1 -->
+            <div
+              class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
+            >
+              <div class="text-[#111418]" data-icon="Clock" data-size="24px" data-weight="regular">
+                <!-- SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-base font-bold leading-tight text-[#111418]">
+                Session scheduling and reminders
+              </h2>
+            </div>
+
+            <!-- Feature Card 2 -->
+            <div
+              class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
+            >
+              <div class="text-[#111418]" data-icon="Barbell" data-size="24px" data-weight="regular">
+                <!-- SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M248,120h-8V88a16,16,0,0,0-16-16H208V64a16,16,0,0,0-16-16H168a16,16,0,0,0-16,16v56H104V64A16,16,0,0,0,88,48H64A16,16,0,0,0,48,64v8H32A16,16,0,0,0,16,88v32H8a8,8,0,0,0,0,16h8v32a16,16,0,0,0,16,16H48v8a16,16,0,0,0,16,16H88a16,16,0,0,0,16-16V136h48v56a16,16,0,0,0,16,16h24a16,16,0,0,0,16-16v-8h16a16,16,0,0,0,16-16V136h8a8,8,0,0,0,0-16ZM32,168V88H48v80Zm56,24H64V64H88V192Zm104,0H168V64h24V175.82c0,.06,0,.12,0,.18s0,.12,0,.18V192Zm32-24H208V88h16Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-base font-bold leading-tight text-[#111418]">
+                Workout programming and tracking
+              </h2>
+            </div>
+
+            <!-- Feature Card 3 -->
+            <div
+              class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
+            >
+              <div class="text-[#111418]" data-icon="BowlFood" data-size="24px" data-weight="regular">
+                <!-- SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M224,104h-8.37a88,88,0,0,0-175.26,0H32a8,8,0,0,0-8,8,104.35,104.35,0,0,0,56,92.28V208a16,16,0,0,0,16,16h64a16,16,0,0,0,16-16v-3.72A104.35,104.35,0,0,0,232,112,8,8,0,0,0,224,104Zm-24.46,0H148.12a71.84,71.84,0,0,1,41.27-29.57A71.45,71.45,0,0,1,199.54,104ZM173.48,56.23q2.75,2.25,5.27,4.75a87.92,87.92,0,0,0-49.15,43H100.1A72.26,72.26,0,0,1,168,56C169.83,56,171.66,56.09,173.48,56.23ZM128,40a71.87,71.87,0,0,1,19,2.57A88.36,88.36,0,0,0,83.33,104H56.46A72.08,72.08,0,0,1,128,40Zm36.66,152A8,8,0,0,0,160,199.3V208H96v-8.7A8,8,0,0,0,91.34,192a88.29,88.29,0,0,1-51-72H215.63A88.29,88.29,0,0,1,164.66,192Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-base font-bold leading-tight text-[#111418]">
+                Nutrition planning and tracking
+              </h2>
+            </div>
+
+            <!-- Feature Card 4 -->
+            <div
+              class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
+            >
+              <div class="text-[#111418]" data-icon="Users" data-size="24px" data-weight="regular">
+                <!-- SVG -->
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24px"
+                  height="24px"
+                  fill="currentColor"
+                  viewBox="0 0 256 256"
+                >
+                  <path
+                    d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"
+                  ></path>
+                </svg>
+              </div>
+              <h2 class="text-base font-bold leading-tight text-[#111418]">
+                Client management tools
+              </h2>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <!-- Footer -->
+      <footer
+        class="md:px-10 py-3 text-gray-500 text-sm text-center"
+      >
+        <span id="copyright">
+          <!-- You can hard-code the year or auto-update it via JavaScript below -->
+          &copy; <span id="year"></span> FitAthena - All rights reserved
+        </span>
+      </footer>
+    </div>
+
+    <!-- Optional JavaScript to auto-update the copyright year -->
+    <script>
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>

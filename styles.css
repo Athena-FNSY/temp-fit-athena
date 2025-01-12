@@ -1,0 +1,35 @@
+/* Apply the custom font family site-wide */
+@font-face {
+    font-family: "UniNeueHeavyItalic";
+    src: url("./fonts/UniNeue-Trial-HeavyItalic.ttf") format("truetype");
+    font-weight: 900;
+    /* Adjust to match the font weight if needed */
+    font-style: italic;
+}
+
+body {
+    font-family: "UniNeueHeavyItalic", sans-serif;
+}
+
+/* Background image for the feature section */
+.feature-bg-image {
+    background-image: url("https://cdn.usegalileo.ai/sdxl10/0138ebc5-453e-45a0-946a-905c5549dfe8.png");
+    /* You can also control sizing if needed:
+       background-size: cover;
+       background-position: center;
+    */
+}
+
+h1 {
+    font-family: "UniNeueHeavyItalic", sans-serif;
+}
+h3 {
+    color: #000;
+    opacity: 0.8;
+    font-family: "UniNeueHeavyItalic", sans-serif;
+}
+h2 {
+    color: #000;
+    opacity: 0.9;
+    font-family: "UniNeueHeavyItalic", sans-serif;
+}
