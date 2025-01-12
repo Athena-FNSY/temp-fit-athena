@@ -2,7 +2,13 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- Ensures mobile-friendly scaling -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preconnect to Google Fonts (optional) -->
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin />
+
+    <!-- Example of lazy-loading Google Fonts (if you still want them) -->
     <link
       rel="stylesheet"
       as="style"
@@ -32,7 +38,7 @@
           </h2>
         </div>
         <div class="flex flex-1 justify-end gap-8">
-          <!-- Add any top-right navigation or buttons here -->
+          <!-- Add any top-right navigation or buttons here if desired -->
         </div>
       </header>
 
@@ -52,15 +58,13 @@
                 <h1 class="text-4xl font-black leading-tight tracking-[-0.033em]">
                   Coming Soon ...
                 </h1>
-                <h2
-                  class="font-black leading-tight tracking-[-0.033em]"
-                >
+                <h2 class="font-black leading-tight tracking-[-0.033em]">
                   Empower your clients to reach their goals
                 </h2>
                 <h3 class="text-sm font-normal leading-normal">
-                  The all-in-one platform for fitness professionals, coaches, and
-                  nutritionists. Plan workouts, track nutrition, schedule sessions,
-                  and communicate with clients.
+                  The all-in-one platform for fitness professionals, coaches,
+                  and nutritionists. Plan workouts, track nutrition, schedule
+                  sessions, and communicate with clients.
                 </h3>
               </div>
             </div>
@@ -79,7 +83,12 @@
             <div
               class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
             >
-              <div class="text-[#111418]" data-icon="Clock" data-size="24px" data-weight="regular">
+              <div
+                class="text-[#111418]"
+                data-icon="Clock"
+                data-size="24px"
+                data-weight="regular"
+              >
                 <!-- SVG -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -102,7 +111,12 @@
             <div
               class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
             >
-              <div class="text-[#111418]" data-icon="Barbell" data-size="24px" data-weight="regular">
+              <div
+                class="text-[#111418]"
+                data-icon="Barbell"
+                data-size="24px"
+                data-weight="regular"
+              >
                 <!-- SVG -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -125,7 +139,12 @@
             <div
               class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
             >
-              <div class="text-[#111418]" data-icon="BowlFood" data-size="24px" data-weight="regular">
+              <div
+                class="text-[#111418]"
+                data-icon="BowlFood"
+                data-size="24px"
+                data-weight="regular"
+              >
                 <!-- SVG -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -148,7 +167,12 @@
             <div
               class="flex flex-col gap-3 rounded-lg border border-[#dbe0e6] bg-white p-4"
             >
-              <div class="text-[#111418]" data-icon="Users" data-size="24px" data-weight="regular">
+              <div
+                class="text-[#111418]"
+                data-icon="Users"
+                data-size="24px"
+                data-weight="regular"
+              >
                 <!-- SVG -->
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -174,14 +198,11 @@
       <footer
         class="md:px-10 py-3 text-gray-500 text-sm text-center"
       >
-        <span id="copyright">
-          <!-- You can hard-code the year or auto-update it via JavaScript below -->
-          &copy; <span id="year"></span> FitAthena - All rights reserved
-        </span>
+        &copy; <span id="year"></span> FitAthena - All rights reserved
       </footer>
     </div>
 
-    <!-- Optional JavaScript to auto-update the copyright year -->
+    <!-- Auto-update the year in the footer -->
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
     </script>

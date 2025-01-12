@@ -1,35 +1,48 @@
-/* Apply the custom font family site-wide */
+/* 1. Define the custom font face */
 @font-face {
     font-family: "UniNeueHeavyItalic";
     src: url("./fonts/UniNeue-Trial-HeavyItalic.ttf") format("truetype");
-    font-weight: 900;
-    /* Adjust to match the font weight if needed */
+    font-weight: 900; /* Adjust this if needed */
     font-style: italic;
-}
-
-body {
+  }
+  
+  /* 2. Apply it site-wide (optional) */
+  body {
     font-family: "UniNeueHeavyItalic", sans-serif;
-}
-
-/* Background image for the feature section */
-.feature-bg-image {
+  }
+  
+  /* 3. Hero background image (WEBP) */
+  .feature-bg-image {
     background-image: url("fitathena-landpage.webp");
-    /* You can also control sizing if needed:
-       background-size: cover;
-       background-position: center;
+    /* Control background sizing/position as needed: */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  /* 4. Additional heading overrides */
+  
+  h1 {
+    font-family: "UniNeueHeavyItalic", sans-serif;
+    color: #111418;
+    /* 
+      You can adjust font-size, weight, line-height, etc.
+      in your HTML via classes or here. For example:
+      font-size: 2.5rem;
+      line-height: 1.2;
+      font-weight: 900;
     */
-}
-
-h1 {
+  }
+  
+  h2 {
     font-family: "UniNeueHeavyItalic", sans-serif;
-}
-h3 {
-    color: #000;
-    opacity: 0.8;
-    font-family: "UniNeueHeavyItalic", sans-serif;
-}
-h2 {
     color: #000;
     opacity: 0.9;
+    /* Additional styling if desired */
+  }
+  
+  h3 {
     font-family: "UniNeueHeavyItalic", sans-serif;
-}
+    color: #000;
+    opacity: 0.8;
+    /* Additional styling if desired */
+  }
