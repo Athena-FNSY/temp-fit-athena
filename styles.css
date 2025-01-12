@@ -21,7 +21,7 @@
   
   /* 4. Background for the hero section */
   .feature-bg-image {
-    background-image: url("fitathena-landpage.webp");
+    background-image: url("fitathena.webp");
     background-size: cover;
     background-position: center;
   }
