@@ -20,7 +20,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: #457ce4; /* Background color */
+  background-color: #fff; /* Background color */
   font-family: 'Uni Neue', sans-serif;
 }
 
@@ -30,6 +30,7 @@ body {
 }
 
 .logo-text {
+  color: #457ce4;;
   font-weight: 700; /* Bold font */
   font-size: 3rem; 
   text-transform: uppercase; /* Uppercase letters */
@@ -38,6 +39,7 @@ body {
 }
 
 .coming-soon {
+  color: #457ce4;;
   font-size: 1.5rem;
   letter-spacing: 0.05em; /* Spacing between letters */
   opacity: 0.8;
